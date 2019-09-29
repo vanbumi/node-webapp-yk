@@ -8,6 +8,9 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+// crate public folder
+app.use("/public", express.static(path.join(__dirname, 'public')));
+
 
 
 
